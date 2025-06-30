@@ -1,1 +1,27 @@
+{
+  "name": "raahim-adblock-render",
+  "version": "1.0.0",
+  "description": "A dynamically generated adblock list hosted on Render.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
+  "keywords": [
+    "adblock",
+    "hosts",
+    "dns",
+    "privacy",
+    "render",
+    "nodejs"
+  ],
+  "author": "Raahim",
+  ""
+}
 
