@@ -1,1 +1,157 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A slightly modern font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light gray background */
+    color: #333; /* Dark gray text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column; /* Allow content to stack vertically */
+}
+
+.container {
+    background: #ffffff; /* White container background */
+    padding: 30px;
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); /* Softer, larger shadow */
+    text-align: center;
+    max-width: 900px; /* Wider container */
+    width: 90%;
+    margin: 20px auto; /* Add vertical margin */
+}
+
+.header-text {
+    font-size: 2.8em; /* Larger header */
+    font-weight: 700; /* Medium bold */
+    color: #2c3e50; /* A dark blue-gray for prominence */
+    margin-bottom: 25px;
+    letter-spacing: -0.5px; /* Slight letter spacing adjustment */
+}
+
+h1 {
+    color: #007bff; /* A nice blue for general headings */
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1.05em; /* Slightly larger paragraph text */
+}
+
+pre {
+    background-color: #e9ecef; /* Lighter gray for code blocks */
+    padding: 18px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.95em;
+    border: 1px solid #dee2e6; /* Subtle border */
+    text-align: left; /* Align text left within preformatted blocks */
+}
+
+code {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace; /* Monospace font for code */
+    color: #c0392b; /* A distinct red for code */
+}
+
+.description-section {
+    background-color: #f0f0f0; /* Light gray for description sections */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: left; /* Align text left within description sections */
+    border-left: 5px solid #007bff; /* Blue accent border */
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.description-section p {
+    margin: 0 0 10px 0; /* Adjust margin for paragraphs within sections */
+}
+
+.description-section p:last-child {
+    margin-bottom: 0;
+}
+
+.developer-image {
+    width: 150px; /* Medium size */
+    height: 150px; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make it perfectly round */
+    object-fit: cover; /* Cover the area, cropping if necessary */
+    border: 4px solid #fff; /* White border */
+    box-shadow: 0 0 15px rgba(0,0,0,0.15); /* Soft shadow */
+    margin-bottom: 25px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 45px; /* Size of icons */
+    height: 45px;
+    background-color: #ffffff; /* White background for icons */
+    border-radius: 50%;
+    margin: 0 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em; /* Size of the icon text/svg if used */
+    color: #007bff; /* Blue color for icon content */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-decoration: none; /* Remove underline for links */
+}
+
+.social-icon:hover {
+    transform: translateY(-3px); /* Slight lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* For simplicity, we'll use text-based placeholders for social icons.
+   For actual icons, you would use Font Awesome, SVG, or images. */
+.social-icon.instagram::before { content: "📷"; } /* Placeholder emoji */
+.social-icon.facebook::before { content: "👍"; } /* Placeholder emoji */
+
+
+.footer-content {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #e0e0e0; /* Light border above footer */
+    font-size: 0.9em;
+    color: #666; /* Slightly lighter text for footer */
+    line-height: 1.7;
+    text-align: left; /* Align footer text to the left */
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-text {
+        font-size: 2.2em;
+    }
+    .container {
+        padding: 20px;
+    }
+    .description-section {
+        padding: 15px;
+        font-size: 1em;
+    }
+    .developer-image {
+        width: 120px;
+        height: 120px;
+    }
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5em;
+    }
+}
 
