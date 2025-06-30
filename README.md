@@ -1,2 +1,0 @@
-# raahimad
-Ultimate Merged Adblock
