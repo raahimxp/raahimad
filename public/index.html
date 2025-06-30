@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raahim Ultimate Adblock</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-text">Raahim Ultimate Adblock</div>
+
+        <h1>Welcome to My Custom Adblock List Host!</h1>
+        <p>This site dynamically generates and hosts a merged, de-duplicated adblock list from multiple sources.</p>
+        <p>You can add the following URL to your adblocker:</p>
+        <pre><code id="adblockUrl"></code></pre>
+        <p>The list is updated periodically to ensure you have the latest blocking rules.</p>
+
+        <div class="description-section">
+            <p>🚫 **Tired of intrusive ads and annoying pop-ups?** Our service provides a robust, self-updating adblock list that cleans up your web experience. Imagine Browse without distractions, faster page loads, and enhanced privacy!</p>
+        </div>
+        <div class="description-section">
+            <p>🛡️ **Why choose our ultimate list?** We meticulously merge and de-duplicate rules from over 40 top-tier adblock sources worldwide. This means you get comprehensive protection against ads, trackers, and malicious domains, all in one efficient package. It's like having an army of ad-blockers working together!</p>
+        </div>
+        <div class="description-section">
+            <p>⚡ **Always up-to-date, effortlessly.** Our system automatically fetches the latest updates from all sources, merges them, and presents you with a fresh list. No manual updates needed on your end – just pure, uninterrupted Browse bliss. Embrace the clean internet you deserve! ✨</p>
+        </div>
+
+        <div class="developer-info-section">
+            <img id="developerImage" src="https://via.placeholder.com/150/f0f0f0/333?text=Developer+Image" alt="Developer Image" class="developer-image">
+            <div class="social-icons">
+                <a href="#" class="social-icon instagram" aria-label="Instagram"></a>
+                <a href="#" class="social-icon facebook" aria-label="Facebook"></a>
+            </div>
+            <p>Connect with the developer!</p>
+        </div>
+
+        <div class="footer-content">
+            <p>1. This is an open-source community project. Information and filter rules are aggregated from publicly available sources across the internet.</p>
+            <p>2. **Credits:** This aggregated list incorporates contributions from various prominent adblock initiatives and filter lists, including but not limited to: EasyList, EasyPrivacy, AdGuard DNS Filters, Peter Lowe's Ad and tracking server list, Fanboy's Annoyances, Steven Black's Hosts, regional language-specific lists, and many more. Your support helps foster a cleaner web. </p>
+            <p>3. Made with ❤️ by Raahim</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('adblockUrl').textContent = window.location.origin + '/adblock.txt';
+
+        // Placeholder for developer image URL. You can change this!
+        // Example: document.getElementById('developerImage').src = 'YOUR_IMAGE_URL_HERE';
+    </script>
+</body>
+</html>
 
